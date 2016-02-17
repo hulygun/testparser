@@ -9,7 +9,7 @@ class UrlParse(models.Model):
         (0, 'just created'),
         (1, 'add to queue'),
         (2, 'parse success'),
-        (-1, 'parse success'),
+        (-1, 'parse error'),
     )
     url = models.URLField()
     timeshift = models.IntegerField(default=0)
